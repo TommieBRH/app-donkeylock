@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/app-donkeylock/static/css/main.5d505190.css",
+    "main.js": "/app-donkeylock/static/js/main.fc1f65c7.js",
+    "static/media/donkey.png": "/app-donkeylock/static/media/donkey.f4f46c52a636d1b0607f.png",
+    "index.html": "/app-donkeylock/index.html",
+    "main.5d505190.css.map": "/app-donkeylock/static/css/main.5d505190.css.map",
+    "main.fc1f65c7.js.map": "/app-donkeylock/static/js/main.fc1f65c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d505190.css",
+    "static/js/main.fc1f65c7.js"
+  ]
+}
