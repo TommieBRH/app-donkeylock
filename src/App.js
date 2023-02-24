@@ -33,12 +33,14 @@ function App() {
         </header>
 
         {activeness ?
-                <h2 className={'noti active'}>De donkey lock staat op scherp, vergrendel nu de pc!</h2>
+                <div className={'wrapper'}>
+                    <li className={'noti active'}>De donkey lock staat op scherp, vergrendel nu de pc!</li>
+                </div>
             :
-            <div>
-                <h2 className={'noti'}>Zet de donkey lock op scherp voordat je de computer locked!</h2>
-                <button className={'activator'} onClick={configureActive}>Klik hier om de donkey lock op scherp te zetten!</button>
-            </div>
+                <div className={'wrapper'}>
+                    <li className={'noti'}>Zet de donkey lock op scherp voordat je de computer vergrendeld!</li>
+                    <button className={'activator'} onClick={configureActive}>Klik hier om de donkey lock op scherp te zetten!</button>
+                </div>
         }
     </div>
   );

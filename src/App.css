@@ -19,11 +19,14 @@ header div{
 }
 
 .noti{
-    position: absolute;
-    top: -10vh;
-    left: 15px;
     color: deeppink;
-    margin-top: 100px;
+    list-style-type: none;
+}
+
+.wrapper{
+    width: fit-content;
+    position: absolute;
+    top: 0px;
 }
 
 .active{
@@ -38,12 +41,7 @@ header div{
     color: white;
     box-shadow: 0 0px 2px rgba(0,0,0, 0.96);
     cursor: pointer;
-    font-size: 23px;
-    padding: 10px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-top: 30px;
+    padding: 1%;
 }
 
 .activator:active{
