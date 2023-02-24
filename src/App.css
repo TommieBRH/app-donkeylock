@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+.bg{
+    position: absolute;
+    z-index: -1;
+    background-image: url("../public/donkey/images/donkey.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+    text-align: center;
+    line-height: 9px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    color: black;
+    margin-top: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header div{
+    display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.noti{
+    text-align: center;
+    color: deeppink;
+    margin-top: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.active{
+    color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.activator{
+    outline: none;
+    border: 0px;
+    border-radius: 3px;
+    background-color: #0072ce;
+    color: white;
+    box-shadow: 0 0px 2px rgba(0,0,0, 0.96);
+    cursor: pointer;
+    font-size: 23px;
+    padding: 10px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 30px;
+}
+
+.activator:active{
+    box-shadow: none;
 }

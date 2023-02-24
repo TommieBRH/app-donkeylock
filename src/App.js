@@ -1,23 +1,45 @@
-import logo from './logo.svg';
 import './App.css';
+import './index.css'
+import {useMemo, useState} from "react";
+import axios from 'axios';
 
 function App() {
+    const [activeness, setActive] = useState(false)
+    const configureActive = () => {
+        setActive(true);
+    }
+
+    let donkeySound = new Audio('./donkey/audio/donkey.mp3');
+    useMemo(() => {
+        const handleVisibilityChange = () => {
+            if (!document.hidden) {
+                donkeySound.play()
+            }
+        };
+        document.addEventListener('visibilitychange', handleVisibilityChange);
+        return () => {
+            document.removeEventListener('visibilitychange', handleVisibilityChange);
+        };
+    }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className={'bg'}></div>
+        <header>
+            <h1>Donkey lock</h1>
+            <h3>Invented by <div className={'brh-blue-text'}>Broekhuis</div> solutions</h3>
+        </header>
+
+        {activeness ?
+            <div>
+                <h1 className={'noti active'}>De donkey lock staat op scherp, vergrendel nu de pc!</h1>
+            </div>
+            :
+            <div>
+                <h1 className={'noti'}>Zet de donkey lock op scherp voordat je de computer locked!</h1>
+                <button className={'activator'} onClick={configureActive}>Klik hier om de donkey lock op scherp te zetten!</button>
+            </div>
+        }
     </div>
   );
 }
