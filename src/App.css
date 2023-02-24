@@ -19,7 +19,9 @@ header div{
 }
 
 .noti{
-    text-align: center;
+    position: absolute;
+    top: -10vh;
+    left: 15px;
     color: deeppink;
     margin-top: 100px;
 }
