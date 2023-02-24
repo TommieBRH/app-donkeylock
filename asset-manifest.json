@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/app-donkeylock/static/css/main.5d505190.css",
-    "main.js": "/app-donkeylock/static/js/main.fc1f65c7.js",
+    "main.css": "/app-donkeylock/static/css/main.a979b7f4.css",
+    "main.js": "/app-donkeylock/static/js/main.a211f97a.js",
     "static/media/donkey.png": "/app-donkeylock/static/media/donkey.f4f46c52a636d1b0607f.png",
     "index.html": "/app-donkeylock/index.html",
-    "main.5d505190.css.map": "/app-donkeylock/static/css/main.5d505190.css.map",
-    "main.fc1f65c7.js.map": "/app-donkeylock/static/js/main.fc1f65c7.js.map"
+    "main.a979b7f4.css.map": "/app-donkeylock/static/css/main.a979b7f4.css.map",
+    "main.a211f97a.js.map": "/app-donkeylock/static/js/main.a211f97a.js.map"
   },
   "entrypoints": [
-    "static/css/main.5d505190.css",
-    "static/js/main.fc1f65c7.js"
+    "static/css/main.a979b7f4.css",
+    "static/js/main.a211f97a.js"
   ]
 }
